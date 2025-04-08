@@ -1,7 +1,7 @@
-import { DATABASE_URL } from "$env/static/private";
+import { env } from "$env/dynamic/private";
 
 export const load = async () => {
     return {
-        DATABASE_URL
+        DATABASE_URL: env.DATABASE_URL
     };
 };
